@@ -555,7 +555,7 @@ width: 100px;
 }
 
 .contact-info, .contact-cta {
-  background: white;
+  /* background: white; */
   border-radius: var(--border-radius-lg);
   padding: 2rem;
   box-shadow: var(--shadow-md);
@@ -576,7 +576,7 @@ width: 100px;
 
 .contact-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -587,13 +587,16 @@ width: 100px;
 
 .contact-details {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
 .contact-label {
   font-size: 0.75rem;
   color: var(--gray-500);
-  margin-bottom: 0.25rem;
+      font-weight: bold;
+  /* margin-bottom: 0.25rem; */
 }
 
 .contact-value {

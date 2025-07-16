@@ -57,6 +57,22 @@ const SpherenexAd = () => {
               </button>
               <p className="cta-note">Certificate of Participation provided</p>
             </div>
+             {/* <h3 className="contact-title">Need Help?</h3> */}
+             <div className="contact-cta">
+             <p className="contact-note">
+                Have questions or need assistance with your projects? <br />
+                Our team of <span className="contact-highlight">experts</span> is ready to help you build the next big thing!
+              </p>
+            <button 
+                className="whatsapp-button"
+                onClick={() => window.open('https://wa.me/918861938913', '_blank')}
+              >
+                <span className="whatsapp-text">WhatsApp Us</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="whatsapp-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                </svg>
+              </button>
+              </div>
           </div>
           
           <div className="benefits-card">
@@ -171,10 +187,10 @@ const SpherenexAd = () => {
               <h2 className="contact-title">Get In Touch</h2>
               <ul className="contact-list">
                 {[
-                  { icon: '🌐', label: 'Website', value: 'www.spherenex.com', link: 'https://www.spherenex.com' },
-                  { icon: '📧', label: 'Email', value: 'hello@spherenex.com', link: 'mailto:hello@spherenex.com' },
-                  { icon: '📱', label: 'Phone / WhatsApp', value: '+91 88619 38913', link: 'tel:+918861938913' },
-                  { icon: '📍', label: 'Location', value: 'Bengaluru, India', link: null }
+                  { icon: '🌐', label: 'Website:', value: 'www.spherenex.com', link: 'https://www.spherenex.com' },
+                  { icon: '📧', label: 'Email:', value: 'info@spherenex.com', link: 'mailto:info@spherenex.com' },
+                  { icon: '📱', label: 'Phone / WhatsApp:', value: '+91 88619 38913', link: 'tel:+918861938913' },
+                  { icon: '📍', label: 'Location:', value: 'Bengaluru, India', link: null }
                 ].map((item, index) => (
                   <li key={index} className="contact-item">
                     <span className="contact-icon">{item.icon}</span>
@@ -193,7 +209,7 @@ const SpherenexAd = () => {
               </ul>
             </div>
             
-            <div className="contact-cta">
+            {/* <div className="contact-cta">
               <h3 className="contact-title">Need Help?</h3>
               <button 
                 className="whatsapp-button"
@@ -208,7 +224,7 @@ const SpherenexAd = () => {
                 Have questions or need assistance with your projects? <br />
                 Our team of <span className="contact-highlight">experts</span> is ready to help you build the next big thing!
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
