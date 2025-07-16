@@ -84,6 +84,81 @@ const additionalStyles = `
     white-space: nowrap;
   }
 
+  /* Job Opportunities Section */
+  .job-opportunities {
+    margin-top: 24px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .job-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1d4ed8;
+  }
+
+  .job-icon {
+    margin-right: 8px;
+    color: #1d4ed8;
+  }
+
+  .job-description {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+  }
+
+  .job-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  .job-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+  }
+
+  .job-check {
+    margin-right: 8px;
+    color: #15803d;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .job-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  .stat-number {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1d4ed8;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+    color: #4b5563;
+    text-align: center;
+  }
+
   /* Media query for mobile devices */
   @media (max-width: 768px) {
     .floating-whatsapp-button {
@@ -171,7 +246,7 @@ const SpherenexAd = () => {
               </div>
           </div>
           
-          <div className="benefits-card">
+                      <div className="benefits-card">
             <h3 className="benefits-title">
               <span className="benefits-icon-container">
                 <CheckCircle className="check-icon" />
@@ -185,7 +260,12 @@ const SpherenexAd = () => {
                 'Understand how real-time projects are built',
                 'Learn the tools & skills industry expects',
                 'Explore future career opportunities & tech roles',
-                'Ask questions & interact with industry experts'
+                'Ask questions & interact with industry experts',
+                'Understand high-demand job roles in tech industry',
+                  'Build projects that can be showcased in interviews',
+                  'Connect with our network of 50+ hiring companies',
+                  'Get placement assistance through our career services',
+                  'Access exclusive job openings for workshop participants'
               ].map((item, index) => (
                 <li key={index} className="benefit-item">
                   <Check className="benefit-check" />
@@ -193,6 +273,8 @@ const SpherenexAd = () => {
                 </li>
               ))}
             </ul>
+            
+           
             
             <div className="audience-container">
               <p className="audience-text">
