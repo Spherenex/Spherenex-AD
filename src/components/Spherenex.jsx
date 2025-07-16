@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './SpherenexAd.css';
-import IMG from '../assets/Logo.png'; // Adjust the path as necessary
+import IMG from '../assets/Logo1.png'; // Adjust the path as necessary
 const SpherenexAd = () => {
   const [isHovered, setIsHovered] = useState(false);
 
