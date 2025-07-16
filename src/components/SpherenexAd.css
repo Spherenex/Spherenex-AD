@@ -105,13 +105,13 @@ ul {
 }
 
 .logo-icon img {
-    width: 160px;
+width: 200px;
     /* max-width: 100%; */
     height: auto;
     display: flex;
     object-fit: contain;
     margin-top: 13px;
-    margin-left: -15px;
+    margin-left: -5px;
 }
 
 .logo-title {
@@ -606,6 +606,7 @@ ul {
 .contact-link {
   color: var(--primary);
   transition: var(--transition);
+  width: 120px;
 }
 
 .contact-link:hover {
